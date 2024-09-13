@@ -30,39 +30,47 @@
 <body>
     <div class="f1">
         <H2>CONTACT FORM</H2>
-        <form onsubmit="FormData(event)">
+        <form onsubmit="formdata(event)">
             
-            <input type="text" placeholder="Name" id="name"><br>
+            <input type="text" placeholder="Name" id="name"/><br>
             
-            <input type="tel" placeholder="Mobile" id="phone"><br>
+            <input type="tel" placeholder="Mobile" id="phone"/><br>
+
+            <input type="number" placeholder="Age" id="age"/><br>
             
-            <input type="email" placeholder="E-mail" id="email"><br>
+            <input type="email" placeholder="E-mail" id="email"/><br>
          
-            <input type="password" placeholder="Pasword" id="pass"><br>
+            <input type="password" placeholder="Pasword" id="pass"/><br>
 
             <input type="submit" value="REGISTER">
         </form>
     </div>
     <script>
-        function FormData(e){
-            e.prevntDefault();
-            let name=document.getElementById("name"),value
-            let email=document.getElementById("email").value
+        function formdata(e){
+            e.preventDefault();
+            let name=document.getElementById("name").value
             let phone=document.getElementById("phone").value
+            let age=document.getElementById("age").value
+            let email=document.getElementById("email").value
             let pass=document.getElementById("pass").value
-            console.log(name);
-        }
-
-        const data={
-            username: name,
-            usermail: email,
-            userphone: phone,
-            userpassword: pass
-        }
-
-        const { username,usermail,userphone,userpassword } 
-        console.log(...data1,false,...data2)
+            console.log(name,phone,age,email,pass)   
         
+            
+            const data={
+                username: name,
+                userage: age,
+                usermail: email,
+                userphone: phone,
+                userpassword: pass
+            }
+
+        const { username,userage,usermail,userphone,userpassword } = data
+        console.log(usermail)
+    }
+    let data1=[1,2,3,4]
+    let data2=['a','b','c','d']
+    let data3=[...data1,false,...data2]
+    console.log(data3)
     </script>
 </body>
 </html>
