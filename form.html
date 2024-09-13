@@ -25,21 +25,12 @@
    
     
     </style>
-    <script>
-        function FormData(){
-            let e1=document.getElementById("name"),value;
-            let e2=document.getElementById("email").value;
-            let e3=document.getElementById("phone").value;
-            let e4=document.getElementById("pass").value;
-            console.log("Name: " + e1 + ", Email: " + e2 + ", Phone: " + e3 + ", Password: " + e4);
-        }
-        
-    </script>
+    
 </head>
 <body>
     <div class="f1">
         <H2>CONTACT FORM</H2>
-        <form >
+        <form onsubmit="FormData(event)">
             
             <input type="text" placeholder="Name" id="name"><br>
             
@@ -49,8 +40,29 @@
          
             <input type="password" placeholder="Pasword" id="pass"><br>
 
-            <input type="submit" value="REGISTER" onclick="FormData()">
+            <input type="submit" value="REGISTER">
         </form>
     </div>
+    <script>
+        function FormData(e){
+            e.prevntDefault();
+            let name=document.getElementById("name"),value
+            let email=document.getElementById("email").value
+            let phone=document.getElementById("phone").value
+            let pass=document.getElementById("pass").value
+            console.log(name);
+        }
+
+        const data={
+            username: name,
+            usermail: email,
+            userphone: phone,
+            userpassword: pass
+        }
+
+        const { username,usermail,userphone,userpassword } 
+        console.log(...data1,false,...data2)
+        
+    </script>
 </body>
 </html>
