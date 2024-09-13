@@ -22,26 +22,34 @@
             margin-top: 7%;
             margin-left: 25%;
         }
-    .f1{
-        background: #FEAC5E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
+   
+    
     </style>
+    <script>
+        function FormData(){
+            let e1=document.getElementById("name"),value;
+            let e2=document.getElementById("email").value;
+            let e3=document.getElementById("phone").value;
+            let e4=document.getElementById("pass").value;
+            console.log("Name: " + e1 + ", Email: " + e2 + ", Phone: " + e3 + ", Password: " + e4);
+        }
+        
+    </script>
 </head>
 <body>
     <div class="f1">
         <H2>CONTACT FORM</H2>
-        <form>
-            <label>NAME</label><br>
-            <input type="text"><br>
-            <label>MOBILE</label><br>
-            <input type="tel"><br>
-            <label>E-mail</label><br>
-            <input type="email"><br>
-            <label>PASSWORD</label><br>
-            <input type="password"><br>
+        <form >
+            
+            <input type="text" placeholder="Name" id="name"><br>
+            
+            <input type="tel" placeholder="Mobile" id="phone"><br>
+            
+            <input type="email" placeholder="E-mail" id="email"><br>
+         
+            <input type="password" placeholder="Pasword" id="pass"><br>
+
+            <input type="submit" value="REGISTER" onclick="FormData()">
         </form>
     </div>
 </body>
