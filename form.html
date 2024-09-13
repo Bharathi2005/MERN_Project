@@ -53,7 +53,22 @@
             let age=document.getElementById("age").value
             let email=document.getElementById("email").value
             let pass=document.getElementById("pass").value
-            console.log(name,phone,age,email,pass)   
+            if(name!=="" && email!=="" && phone!==0 && age!==0 && pass!==""){
+                if(name==="BHARATHI AK" || email==="cnlab@gmail.com"){
+                    alert("User/mail already exists")
+                }
+                else if(age<18)
+                {
+                    alert("MINOR NOT ALOOWED")
+                }
+                else{
+                    alert("Successful")
+                }
+            }
+            else{
+                alert("Empty fields not aloowed")
+            }
+            // console.log(name,phone,age,email,pass)   
         
             
             const data={
@@ -61,11 +76,13 @@
                 userage: age,
                 usermail: email,
                 userphone: phone,
-                userpassword: pass
+                userpassword: pass,
+                // usertype: age>=18?"MAJOR":"MINOR"
             }
 
-        const { username,userage,usermail,userphone,userpassword } = data
+        const { username,userage,usermail,userphone,userpassword,usertype} = data
         console.log(usermail)
+        // alert(usertype+" "+"NOT ALLOWED")
     }
     let data1=[1,2,3,4]
     let data2=['a','b','c','d']
