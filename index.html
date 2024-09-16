@@ -7,8 +7,8 @@
     <title>RESUME</title>
     <style>
         * {
-            margin: 0px;
-            padding:2px;
+            margin: 1px;
+            padding:0px;
         }
 
         body {
@@ -25,11 +25,12 @@
         
         .section1 {
             width: 70%;
-            height: 12rem; 
+            height: 8rem; 
             background: #a8ff78;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            position:fixed; 
+            top: 0;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -47,7 +48,7 @@
 
         .profile-img-section {
             width: 40%;
-            height: 100%;
+            height: 70%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -63,9 +64,9 @@
         }
 
         .profile-img {
-            height: 8rem;
-            width: 8rem;
-            border-radius: 50%;
+            height: 7rem;
+            width: 7rem;
+            border-radius: 70%;
             background: rgba( 43, 36, 36, 0.35 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 13.5px );
@@ -77,6 +78,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
         .section2 {
             width: 70%;
             height: 12rem;
+            margin-top:10rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -144,7 +146,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
         .section5 {
             width: 70%;
-            height: 8rem;
+            height: 12rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -159,7 +161,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 3rem;
+            gap: 1rem;
             font-weight: bold;
             background: #a8ff78;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
@@ -201,8 +203,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .whatsapp {
-  margin-top: 0.2em;
-  margin-left: 0.2em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
   fill: #00ff00;
 }
 
@@ -219,8 +221,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .linkedin {
-  margin-top: 0.2em;
-  margin-left: -0.2em;
+  margin-top: 0.5em;
+  margin-left: -0.5em;
   fill: #0077b5;
 }
 
@@ -254,9 +256,9 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .Email {
-  margin-top: -0.2em;
-  margin-left: -0.2em;
-  fill: #8c9eff;
+  margin-top: -0.4em;
+  margin-left: -0.5em;
+  fill: #ececec;
 }
 
 .card1:hover {
@@ -292,7 +294,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .card4:hover {
   cursor: pointer;
   scale: 1.1;
-  background-color: #8c9eff;
+  background-color: #2443f4;
 }
 
 .card4:hover .Email {
@@ -302,6 +304,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             font-weight: bold;
             position: sticky;
             margin-left: 60%;
+            height:3rem;
         }
         
     </style>
@@ -313,24 +316,21 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 <body>
     <div class="section1">
         <div class="profile-img-section">
-            <img src="./assests/img/profile.png.jfif" alt="me" class="profile-img">
+            <img src="./assests/img/IMG-20240313-WA0002.jpg" alt="me" class="profile-img">
         </div>
         <div class="profile-data">
             <h1>
                 BHARATHI A K
             </h1>
-            <a href="mailto:bharathiak2005@gmail.com">
-
                 <h3>
                     bharathiak2005@gmail.com
                 </h3>
-            </a>
         </div>
     </div>
     <div class="section2">
         <h1 class="section-title color-primary">
             ABOUT ME
-        </h1><br>
+        </h1>
         <p>
             
 A highly motivated and analytical problem-solver with a proven ability to problem-solving skill . I thrive in fast-paced environments. Seeking a challenging role where I can leverage my problem-solving skills to drive positive outcomes.
@@ -339,7 +339,7 @@ A highly motivated and analytical problem-solver with a proven ability to proble
     <div class="section3">
         <h1 class="section-title color-primary">
             EDUCATION
-        </h1><br>
+        </h1>
         <table class="ed-table">
             <tr>
                 <th>QUALIFICATION</th>
@@ -362,7 +362,7 @@ A highly motivated and analytical problem-solver with a proven ability to proble
                 <td>8.6 cgpa(till 4th semester)</td>
             </tr>
         </table>
-    </div>
+    </div><br>
     <div class="section4">
         <h1 class="section-title color-primary">
             INTERNSHIPS</h1><pre class="comp"><span class="companies">
@@ -377,19 +377,38 @@ A highly motivated and analytical problem-solver with a proven ability to proble
                         *I gained valuable hands-on experience in building dynamic web applications. 
                         *I successfully developed "to-do list" and "calculator" using flask. 
         </pre>
-    </div>
+    </div><br><br>
     <div class="section5">
         <h1 class="section-title color-primary">
             SKILLS
-        </h1><br>
+        </h1>
         <ul>
+            <li>Python</li>
+            <li>Web Stack</li>
+            <li>MySQL</li>
             <li>Problem Solving</li>
-            <li>MERN</li>
+            <li>MERN Stack</li>
             <li>Cyber Forensics</li>
-            <li>Ethical Hacking</li>
         </ul>
-    </div><br><br>
-   
+    </div><br><br><br><br>
+    <div class="section4">
+      <h1 class="section-title color-primary">
+          PROJECTS</h1><pre class="comp"><span class="companies">
+              1. MALICIOUS FILE IDENTIFICATION</span>
+                  
+                      *This project involves designing a system to detect malicious files based on their magic numbers. 
+                      *It integrates file type validation with cybersecurity techniques to enhance malware detection 
+                          efficiency, reducing the risks of opening harmful files.
+                      </pre>
+      <pre class="comp"><span class="companies">
+              2. HONEYPOT SENTINEL</span>
+                  
+                      *Honeypot Sentinel is a cybersecurity project aimed at deploying deceptive systems to lure and 
+                          monitor malicious actors. 
+                      *This project contributes to network security by enabling proactive defense strategies and improving 
+                          incident response capabilities. 
+      </pre>
+  </div>
     <div class="section6">
        </div>
        <div class="section7">
@@ -444,24 +463,17 @@ A highly motivated and analytical problem-solver with a proven ability to proble
       
       <a href="mailto:bharathiak2005@gmail.com" target="_blank class="card4"> 
       <button class="card4">
-            <svg
-              class="Email"
-              height="30px"
-              width="30px"
-              viewBox="0 0 30 30"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-        
-          <path stroke-width="0" d="M59,5v36.545H5V5H59 M64,0H0v46.545h64V0L64,0z"/>
-          
-        </svg>
-      
+        <svg class="Email" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+          <path d="M22 6l-10 7L2 6"></path>
+        </svg>        
         </button>
       </a>
       </div>
       
       </div>
     </div>
+    
 </body>
 
 </html>
