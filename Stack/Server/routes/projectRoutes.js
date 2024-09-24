@@ -20,7 +20,7 @@ router.post('/add', async (req, res) => {
 
         }
         const savedata = await newprojectdata.save()
-        res.status(201).json(savedata)
+        res.status(200).json(savedata)
 
     } catch (error) {
         res.status(500).json(error)
